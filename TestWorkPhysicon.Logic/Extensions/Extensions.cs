@@ -41,7 +41,8 @@ namespace TestWorkPhysicon.Logic.Extensions
 
         public static ModuleDTO ToModuleDTO(this Module module)
         {
-            return new ModuleDTO {
+            return new ModuleDTO
+            {
                 Id = module.Id,
                 Title = module.Title,
                 ContentType = module.ContentType,
@@ -51,7 +52,7 @@ namespace TestWorkPhysicon.Logic.Extensions
                 Num = module.Num,
                 Order = module.Order,
                 ParentId = module.ParentId,
-                Modules = new List<ModuleDTO>()                
+                Modules = new List<ModuleDTO>()
             };
         }
     }
